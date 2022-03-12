@@ -37,8 +37,14 @@
         </div>
       </div>
 
-      <div>
+      <div class="dummy-footer">
+        <div>
+
         in ♥️ with <a href="https://motion.dev">motion.dev</a>
+        </div>
+        <div>
+          <a href="https://github.com/HerrHansen/motion-confetti">Check on gitHub</a>
+        </div>
       </div>
     </div>
     <Confetti :config="config" v-if="!isReloading" />
@@ -153,5 +159,10 @@ input {
 .dummy-row {
   display: flex;
   justify-content: space-between;
+}
+
+.dummy-footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
 }
 </style>
